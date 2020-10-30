@@ -1,0 +1,11 @@
+# E-MAIL ACCOUNT WHICH WILL SEND THE RESULTS
+
+> I DO recommend creating another e-mail, like a dev email whose purpouse is to send emails through programs/scripts.
+> please make sure your gmail account allows 'LESS SECURE APPS' : https://myaccount.google.com/lesssecureapps
+
+
+## email adress                   |   'mail_dev' var
+email@gmail.com
+
+## password                       |   'password' var
+this-is-a-sample-password
