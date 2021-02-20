@@ -11,10 +11,16 @@ import json
 CLI Libraries
 """
 
-from PyInquirer import style_from_dict, Token, prompt, Separator
-from PyInquirer import Validator, ValidationError
-from pprint import pprint
+# PyInquirer 1
+#from PyInquirer import style_from_dict, Token, prompt, Separator
+#from PyInquirer import Validator, ValidationError
+#from pprint import pprint
 
+
+#PyInquirer2 support
+from inquirer2 import prompt, Separator
+from prompt_toolkit.validation import Validator, ValidationError
+from prompt_toolkit.styles import Style as prompt_toolkit_style
 
 
 """
@@ -213,6 +219,9 @@ def ConstruireQuestions():
 
 
 def menu():
+    #PYINQUIRER1
+
+    """
     style = style_from_dict({
         Token.QuestionMark: '#E91E63 bold',
         Token.Selected: '#673AB7 bold',
@@ -220,11 +229,29 @@ def menu():
         Token.Answer: '#2196f3 bold',
         Token.Question: '',
     })
+    """
+
+    #PyInquirer2
+
+    style = prompt_toolkit_style.from_dict({
+        'separator': '#E91E63',
+        'questionmark': '#E91E63',
+        'focus': '#2196f3',
+        'checked': '#2196f3',  # default
+        'pointer': '#ff8700',  # AWS orange
+        'instruction': '#ff8700',  # default
+        'answer': '#00ffd7',  # AWS orange
+        'question': '#2196f3',
+    })
 
 
     questions = ConstruireQuestions()
 
-    answers = prompt(questions, style=style)
+    # PYINQUIRER1
+    # answers = prompt(questions, style=style)
+
+    #PyInquirer2
+    answers = prompt.prompt(questions, style=style)
 
     return answers
 

@@ -13,10 +13,16 @@ import regex
 CLI Libraries
 """
 
-from PyInquirer import style_from_dict, Token, prompt, Separator
-from PyInquirer import Validator, ValidationError
-from pprint import pprint
+# PyInquirer 1
+#from PyInquirer import style_from_dict, Token, prompt, Separator
+#from PyInquirer import Validator, ValidationError
+#from pprint import pprint
 
+
+#PyInquirer2 support
+from inquirer2 import prompt, Separator
+from prompt_toolkit.validation import Validator, ValidationError
+from prompt_toolkit.styles import Style as prompt_toolkit_style
 
 
 """
@@ -61,7 +67,7 @@ from email import encoders
 
 
 #   Maths operations
-import numpy as np
+# import numpy as np
 
 #   Random FUNCTIONS
 from random import randint
@@ -123,7 +129,7 @@ f_participants = open( data_participants, encoding='utf-8')
 simulation_path = './simulation/simulation.csv'
 
 
-simulation_utf8 = open(simulation_path, encoding='utf-8')
+simulation_utf8 = open(simulation_path, 'w+' ,encoding='utf-8')
 
 
 
@@ -1031,6 +1037,10 @@ def ConstruireQuestions():
 
 
 def menu():
+
+    #PYINQUIRER1
+
+    """
     style = style_from_dict({
         Token.QuestionMark: '#E91E63 bold',
         Token.Selected: '#673AB7 bold',
@@ -1038,11 +1048,28 @@ def menu():
         Token.Answer: '#2196f3 bold',
         Token.Question: '',
     })
+    """
 
+    #PyInquirer2
+
+    style = prompt_toolkit_style.from_dict({
+        'separator': '#E91E63',
+        'questionmark': '#E91E63',
+        'focus': '#2196f3',
+        'checked': '#2196f3',  # default
+        'pointer': '#ff8700',  # AWS orange
+        'instruction': '#ff8700',  # default
+        'answer': '#00ffd7',  # AWS orange
+        'question': '#2196f3',
+    })
 
     questions = ConstruireQuestions()
 
-    answers = prompt(questions, style=style)
+    # PYINQUIRER1
+    # answers = prompt(questions, style=style)
+
+    #PyInquirer2
+    answers = prompt.prompt(questions, style=style)
 
     return answers
 
