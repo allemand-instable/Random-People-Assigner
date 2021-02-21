@@ -64,14 +64,8 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
-
-
-#   Maths operations
-# import numpy as np
-
 #   Random FUNCTIONS
 from random import randint
-
 #   CSV files libraries
 import csv
 
@@ -1114,7 +1108,6 @@ def action():
 
     return True
 
-['Random Picker', 'Assign Cycle'],
 
 def loop():
     running = True

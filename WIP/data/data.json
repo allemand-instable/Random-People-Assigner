@@ -1,0 +1,10 @@
+{
+    "login": {
+        "dev_email": "user",
+        "password": "password"
+    },
+    "message": {
+        "message_title": "title",
+        "message_body": "message"
+    }
+}
