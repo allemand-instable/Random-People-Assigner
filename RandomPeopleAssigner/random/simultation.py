@@ -1,7 +1,8 @@
-"""
-Simulations
-"""
-
+import csv
+from RandomPeopleAssigner.random.cycle import LaBoucle, PermutationAleatoire
+from RandomPeopleAssigner.random.tirage import tirageAuSort
+from colorama.ansi import Fore
+from RandomPeopleAssigner.tools.csv import creerListeDeCouples, from_csv_to_list
 
 
 def ligne(numero_tableau, numero_ligne):
@@ -9,10 +10,7 @@ def ligne(numero_tableau, numero_ligne):
 
 
 
-def prochaineSimulation(K, nbr):
-    print(simulation_path)
-
-
+def prochaineSimulation(K, nbr, simulation_path):
     with open(simulation_path, 'w', newline='', encoding='utf8') as csvfile:
         fieldnames = ['Nom', 'Personne attribuée']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -31,7 +29,7 @@ def prochaineSimulation(K, nbr):
 
 
 
-def simulation_random(Participants, N):
+def simulation_random(Participants, N, simulation_path):
 
     personne1 = 0
     personne2 = 1
@@ -67,7 +65,7 @@ def simulation_random(Participants, N):
 
 
 
-def simulation_cycle(Participants, N):
+def simulation_cycle(Participants, N, simulation_path):
 
     personne1 = 0
     personne2 = 1
@@ -106,17 +104,17 @@ def simulation_cycle(Participants, N):
 
 
 
-def mainSimulations(nbr_sim, mode):
+def mainSimulations(nbr_sim, mode, user_mail_list_path, simulation_path = "./simulation/simulation.csv"):
 
-    Participants = from_csv_to_list(csv_participants)
+    Participants = from_csv_to_list(user_mail_list_path)
     print(Participants)
 
 
     if mode == 'tirage' :
-        simulation_random(Participants, nbr_sim)
+        simulation_random(Participants, nbr_sim, simulation_path)
 
     elif mode == 'cycle':
-        simulation_cycle(Participants, nbr_sim)
+        simulation_cycle(Participants, nbr_sim, simulation_path)
 
     wait = input('ENTER')
 

@@ -4,6 +4,8 @@ cycle
 
 """
 
+from RandomPeopleAssigner.tools.csv import creerListeDeCouples, from_csv_to_list
+from RandomPeopleAssigner.tools.mail import DataFromJSON, envoyer_email
 from colorama import Fore, Back, Style
 
 
@@ -15,7 +17,7 @@ from random import randint
 cycle aleatoire de [1,n]
 """
 
-def PermutationAleatoire(nbre=7):
+def PermutationAleatoire(nbre):
     P = []
 
     intervalle = [ k for k in range(nbre) ]
@@ -65,53 +67,33 @@ def LaBoucle(Personnes, Permutation):
 processus de Bouclage
 """
 
-def mainBoucle():
-
-
+def mainBoucle(user_mail_list_path = "./data/participants.csv", data_json_path = "./data/data.json"):
     """
     message
     """
-
-    data = DataFromJSON(data_json)
-
+    data = DataFromJSON(data_json_path)
     message_body = data['message']['message_body']
-
-
     message_subject = data['message']['message_title']
-
-
     """
     Variables d'esthetique
     """
-
-    nom = 0
-    email = 1
     personne1 = 0
     personne2 = 1
-
     """
     Listes
     """
-
     # Participants Brute
-    L = from_csv_to_list(file)
+    L = from_csv_to_list(user_mail_list_path)
     M = creerListeDeCouples(L)
-
     """
     La boucle
     """
     Permutation = PermutationAleatoire(len(M))
-
     K = LaBoucle(M, Permutation)
-
-    print(Fore.GREEN + 'Permutation  =  ' + str(Permutation) + '\n\n' + 'K = ' + str(K) + Fore.WHITE + '\n\n\n' + Fore.YELLOW)
-
-
+    # print(Fore.GREEN + 'Permutation  =  ' + str(Permutation) + '\n\n' + 'K = ' + str(K) + Fore.WHITE + '\n\n\n' + Fore.YELLOW)
     for n in range(len(K)):
-        print(K[n][personne1][nom], K[n][personne2][nom])
-        envoyer_email(K[n][personne1], K[n][personne2], message_subject, message_body)
-
-    f.close()
-
+        # print(f"mail envoyé : {K[n][personne1][nom]} | {K[n][personne2][nom]}")
+        envoyer_email(K[n][personne1], K[n][personne2], message_subject, message_body, data_json_path)
     print(Fore.WHITE)
+    wait = input('ENTER')
     return None

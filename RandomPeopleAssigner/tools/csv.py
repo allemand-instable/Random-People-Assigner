@@ -2,18 +2,20 @@
 CSV TOOLS
 """
 from colorama import Fore, Back, Style
-
+import csv
 
 
 
 #   convertir le csv en une liste
 #   facile à naviguer
 
-def from_csv_to_list(csv_file):
+def from_csv_to_list(csv_file_path):
     L = []
-    for row in csv_file:
-        L.append(row)
-    return L
+    with open(csv_file_path, mode="r", encoding="utf-8") as csv_file:
+        lines = csv.reader(csv_file, delimiter = ",")
+        for row in lines:
+            L.append(row)
+        return L
 
 
 
@@ -21,12 +23,9 @@ def from_csv_to_list(csv_file):
 #   (Nom de la personne, son email)
 
 def creerListeDeCouples(L):
-
-    print(len(L))
-
-    print(Fore.GREEN + str(L) + Fore.WHITE)
+    #print(len(L))
+    #print(Fore.GREEN + str(L) + Fore.WHITE)
     M = []
-
     #   on parcourt l'ensemble des noms et emails, sachant que la première ligne est réservée aux titres
     for k in range(1, len(L) ):
         print(Fore.YELLOW +"nom : " + str(L[k][0]) + "   |    mail : " + str(L[k][1]) + Fore.WHITE)

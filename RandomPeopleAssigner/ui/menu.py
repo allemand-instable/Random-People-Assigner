@@ -104,18 +104,15 @@ def action(mail_config_json_path, user_mail_list_path):
 
     elif answer['app_choice'] == 'Random Picker' :
         tirage.mainTirage(mail_config_json_path, user_mail_list_path)
-        pass
 
     elif answer['app_choice'] == 'Assign Cycle' :
         cycle.mainBoucle()
-        pass
 
     elif answer['app_choice'] == 'Simulations' :
         if answer['mode_simulation'] == 'Random Picker'  :
-            sim.mainSimulations(int(answer['nbre_sim']), 'tirage')
+            sim.mainSimulations(nbr_sim = int(answer['nbre_sim']), mode = 'tirage', user_mail_list_path = user_mail_list_path)
         elif answer['mode_simulation'] == 'Assign Cycle'  :
-            sim.mainSimulations(int(answer['nbre_sim']), 'cycle')
-        pass
+            sim.mainSimulations(nbr_sim = int(answer['nbre_sim']), mode = 'cycle', user_mail_list_path = user_mail_list_path)
 
     return True
 
@@ -170,3 +167,10 @@ def loop(mail_config_json_path, user_mail_list_path):
         running = action(mail_config_json_path, user_mail_list_path)
         print("running")
     return
+
+
+def start_menu():
+    clear()
+    mail_config_json_path = "./data/data.json"
+    user_mail_list_path = "./data/participants.csv"
+    loop(mail_config_json_path= mail_config_json_path, user_mail_list_path= user_mail_list_path)
