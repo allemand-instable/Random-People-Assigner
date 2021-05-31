@@ -1,31 +1,201 @@
 Nom,Personne attribuée
 ///  ESSAI NUMERO 1   ///,
-Personne 3,Personne 9
-Personne 9,Personne 4
-Personne 4,Personne5
-Personne5,Personne 2
-Personne 2,Personne6
-Personne6,Personne 1
+Personne 3,Personne 1
 Personne 1,Personne 7
 Personne 7,Personne 8
-Personne 8,Personne 3
+Personne 8,Personne5
+Personne5,Personne 4
+Personne 4,Personne 9
+Personne 9,Personne6
+Personne6,Personne 2
+Personne 2,Personne 3
 ///  ESSAI NUMERO 2   ///,
-Personne6,Personne 9
-Personne 9,Personne 8
+Personne6,Personne 8
 Personne 8,Personne 3
-Personne 3,Personne 4
-Personne 4,Personne 2
-Personne 2,Personne5
-Personne5,Personne 1
-Personne 1,Personne 7
-Personne 7,Personne6
-///  ESSAI NUMERO 3   ///,
-Personne 8,Personne6
-Personne6,Personne 3
 Personne 3,Personne 2
-Personne 2,Personne5
+Personne 2,Personne 9
+Personne 9,Personne5
 Personne5,Personne 7
+Personne 7,Personne 4
+Personne 4,Personne 1
+Personne 1,Personne6
+///  ESSAI NUMERO 3   ///,
+Personne 8,Personne 1
+Personne 1,Personne 2
+Personne 2,Personne 4
+Personne 4,Personne 9
+Personne 9,Personne 7
+Personne 7,Personne6
+Personne6,Personne5
+Personne5,Personne 3
+Personne 3,Personne 8
+///  ESSAI NUMERO 4   ///,
+Personne 9,Personne 4
+Personne 4,Personne 3
+Personne 3,Personne 1
+Personne 1,Personne 2
+Personne 2,Personne 7
+Personne 7,Personne 8
+Personne 8,Personne6
+Personne6,Personne5
+Personne5,Personne 9
+///  ESSAI NUMERO 5   ///,
+Personne6,Personne5
+Personne5,Personne 2
+Personne 2,Personne 8
+Personne 8,Personne 7
+Personne 7,Personne 4
+Personne 4,Personne 9
+Personne 9,Personne 3
+Personne 3,Personne 1
+Personne 1,Personne6
+///  ESSAI NUMERO 6   ///,
+Personne6,Personne 4
+Personne 4,Personne 1
+Personne 1,Personne 7
+Personne 7,Personne 8
+Personne 8,Personne 9
+Personne 9,Personne5
+Personne5,Personne 2
+Personne 2,Personne 3
+Personne 3,Personne6
+///  ESSAI NUMERO 7   ///,
+Personne 8,Personne 4
+Personne 4,Personne 7
 Personne 7,Personne 9
+Personne 9,Personne5
+Personne5,Personne 3
+Personne 3,Personne 2
+Personne 2,Personne6
+Personne6,Personne 1
+Personne 1,Personne 8
+///  ESSAI NUMERO 8   ///,
+Personne5,Personne 4
+Personne 4,Personne 7
+Personne 7,Personne 2
+Personne 2,Personne 3
+Personne 3,Personne 9
+Personne 9,Personne 8
+Personne 8,Personne6
+Personne6,Personne 1
+Personne 1,Personne5
+///  ESSAI NUMERO 9   ///,
+Personne5,Personne 8
+Personne 8,Personne 9
+Personne 9,Personne 2
+Personne 2,Personne6
+Personne6,Personne 1
+Personne 1,Personne 4
+Personne 4,Personne 3
+Personne 3,Personne 7
+Personne 7,Personne5
+///  ESSAI NUMERO 10   ///,
+Personne 7,Personne6
+Personne6,Personne 2
+Personne 2,Personne 3
+Personne 3,Personne 1
+Personne 1,Personne 9
+Personne 9,Personne 4
+Personne 4,Personne5
+Personne5,Personne 8
+Personne 8,Personne 7
+///  ESSAI NUMERO 11   ///,
+Personne 8,Personne 3
+Personne 3,Personne5
+Personne5,Personne 9
+Personne 9,Personne 4
+Personne 4,Personne 1
+Personne 1,Personne 2
+Personne 2,Personne 7
+Personne 7,Personne6
+Personne6,Personne 8
+///  ESSAI NUMERO 12   ///,
+Personne 1,Personne5
+Personne5,Personne 8
+Personne 8,Personne 3
+Personne 3,Personne 7
+Personne 7,Personne 9
+Personne 9,Personne 4
+Personne 4,Personne6
+Personne6,Personne 2
+Personne 2,Personne 1
+///  ESSAI NUMERO 13   ///,
 Personne 9,Personne 1
 Personne 1,Personne 4
+Personne 4,Personne6
+Personne6,Personne 8
+Personne 8,Personne 3
+Personne 3,Personne 7
+Personne 7,Personne5
+Personne5,Personne 2
+Personne 2,Personne 9
+///  ESSAI NUMERO 14   ///,
 Personne 4,Personne 8
+Personne 8,Personne 2
+Personne 2,Personne 7
+Personne 7,Personne 1
+Personne 1,Personne5
+Personne5,Personne 3
+Personne 3,Personne 9
+Personne 9,Personne6
+Personne6,Personne 4
+///  ESSAI NUMERO 15   ///,
+Personne 8,Personne6
+Personne6,Personne 2
+Personne 2,Personne 7
+Personne 7,Personne 1
+Personne 1,Personne 3
+Personne 3,Personne 4
+Personne 4,Personne5
+Personne5,Personne 9
+Personne 9,Personne 8
+///  ESSAI NUMERO 16   ///,
+Personne 9,Personne 7
+Personne 7,Personne 8
+Personne 8,Personne5
+Personne5,Personne 3
+Personne 3,Personne 4
+Personne 4,Personne 1
+Personne 1,Personne6
+Personne6,Personne 2
+Personne 2,Personne 9
+///  ESSAI NUMERO 17   ///,
+Personne 4,Personne 2
+Personne 2,Personne 1
+Personne 1,Personne 3
+Personne 3,Personne5
+Personne5,Personne 9
+Personne 9,Personne 7
+Personne 7,Personne 8
+Personne 8,Personne6
+Personne6,Personne 4
+///  ESSAI NUMERO 18   ///,
+Personne 2,Personne 1
+Personne 1,Personne5
+Personne5,Personne 3
+Personne 3,Personne 8
+Personne 8,Personne6
+Personne6,Personne 4
+Personne 4,Personne 9
+Personne 9,Personne 7
+Personne 7,Personne 2
+///  ESSAI NUMERO 19   ///,
+Personne 1,Personne 9
+Personne 9,Personne5
+Personne5,Personne6
+Personne6,Personne 4
+Personne 4,Personne 2
+Personne 2,Personne 3
+Personne 3,Personne 8
+Personne 8,Personne 7
+Personne 7,Personne 1
+///  ESSAI NUMERO 20   ///,
+Personne 1,Personne 2
+Personne 2,Personne 4
+Personne 4,Personne 3
+Personne 3,Personne 7
+Personne 7,Personne6
+Personne6,Personne5
+Personne5,Personne 8
+Personne 8,Personne 9
+Personne 9,Personne 1
