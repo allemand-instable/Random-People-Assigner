@@ -2,6 +2,10 @@
 
  A simple Toolbox to randmoly assign a set of people to others ( of the same group ), sending them an email to know with whom they have been assigned - Perfect for Secret Santas, Killer party game, etc...
 
+## TODO
+
+- > translate everything to English
+
 ## How to use
 
 ### set up the mail
